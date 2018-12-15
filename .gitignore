@@ -1,2 +1,8 @@
 /myBlog/myBlog/obj
 /myBlog/myBlog/bin
+/myBlog/myBlog/Web.config
+bin/
+obj/
+bin
+/myBlog/myBlog.BLL/obj
+obj

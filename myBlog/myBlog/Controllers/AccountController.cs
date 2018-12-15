@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using myBlog.BLL;
+using myBlog.Entity;
 
 namespace myBlog.Controllers
 {
@@ -11,7 +13,10 @@ namespace myBlog.Controllers
         // GET: Account
         public ActionResult Index()
         {
-            return View();
+            UserBLL ubll = new UserBLL();
+            User u = ubll.GetUserInfo("Lukaaa");
+            return View(u);
+            
         }
 
         public ActionResult Login()
